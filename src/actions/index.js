@@ -11,6 +11,6 @@ export const updateCart = (data) => async (dispatch) => {
   dispatch({ type: "UPDATE_CART", payload: data });
 };
 // Placing Order
-export const placeOrder = () => async (dispatch) => {
+export const placeOrder = (data) => async (dispatch) => {
   dispatch({ type: "PLACE_ORDER" });
 };

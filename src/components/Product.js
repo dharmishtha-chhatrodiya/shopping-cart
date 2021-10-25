@@ -34,6 +34,7 @@ const styles = {
     padding: "10px 0px",
     fontSize: "18px",
     fontWeight: 600,
+    textTransform: "capitalize",
   },
   description: {
     lineHeight: "1.5em",
@@ -49,7 +50,8 @@ const styles = {
     zIndex: 0,
   },
   container: {
-    border: "1px solid #efefef",
+    marginTop: "20px",
+    border: "1px solid rgb(216 210 210)",
     boxShadow: "0px 0px 20px rgba(0,0,0,0.05)",
     padding: "20px",
     borderRadius: "5px",
@@ -89,7 +91,7 @@ const Product = (props) => {
   return (
     <>
       {/* Product Card */}
-      <div className="card" style={styles.container}>
+      <div style={styles.container}>
         <div style={styles.imageContainer}>
           <img
             src={data.filename}

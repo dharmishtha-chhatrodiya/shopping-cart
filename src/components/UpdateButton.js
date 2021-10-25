@@ -71,7 +71,9 @@ const UpdateButton = (props) => {
   );
 };
 
-const mapStateToProps = (state) => {};
+const mapStateToProps = (state) => {
+  return { cart: state.cart };
+};
 export default connect(mapStateToProps, { AddCart, RemoveCart, updateCart })(
   UpdateButton
 );

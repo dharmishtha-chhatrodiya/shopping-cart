@@ -3,11 +3,11 @@ import React, { useState } from "react";
 import ProductList from "./components/ProductList";
 import { connect } from "react-redux";
 import ViewCart from "./components/ViewCart";
-// import "./App.css";
+
 const styles = {
   headerLogo: { paddingRight: "10px", fontSize: "22px" },
   header: {
-    padding: ".75rem 1.25rem",
+    padding: "16px 20px 10px",
     marginBottom: 0,
     backgroundColor: "#a683e3",
     borderBottom: "1px solid rgba(0,0,0,.125)",
@@ -32,8 +32,10 @@ const styles = {
     borderRadius: "50px",
   },
 };
+
 function App(props) {
-  const [open, setopen] = useState(false);
+  const [open, setopen] = useState(false); // view cart modal open state
+
   return (
     <>
       {/* header section */}
